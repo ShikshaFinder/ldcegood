@@ -1,11 +1,11 @@
 import React from "react";
 import { HeroParallax } from "../components/ui/hero-parallax";
-import { ButtonsCard } from "../components/ui/tailwindcss-buttons";
+// import { ButtonsCard } from "../components/ui/tailwindcss-buttons";
 
 export default function HeroParallaxDemo() {
   return <HeroParallax products={products} />;
 }
-export const products = [
+ const products = [
   {
     title: "About Shiksha Finder",
     link: "https://shikshafinder.com",
