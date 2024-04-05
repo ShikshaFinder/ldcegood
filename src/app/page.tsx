@@ -52,7 +52,6 @@ const products = [
     link: "https://shikshafinder.com/skillclass",
     thumbnail: "/skillclass.png",
   },
-
   {
     title: "Contact us",
     link: "https://shikshafinder.com/contactus",
