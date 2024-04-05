@@ -5,16 +5,13 @@ import { IconSquareRoundedX } from "@tabler/icons-react";
 
 const loadingStates = [
   {
-    text: "Admission in",
+    text: "Marketing to reach out ",
   },
   {
-    text: "Schools",
+    text: "Students ",
   },
   {
-    text: "Coaching Class",
-  },
-  {
-    text: "Skill Classes",
+    text: "Parents",
   },
   {
     text: "is made extremely....",
