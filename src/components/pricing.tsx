@@ -9,9 +9,11 @@ import {
   Button,
   SimpleGrid,
   useColorModeValue,
-} from "@chakra-ui/react";  
-
-import Link from "next/link";
+  Alert,
+  AlertIcon,
+  Link,
+} from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 // Here we have used react-icons package for the icons
 
@@ -59,6 +61,14 @@ const plansList = [
 const ThreeTiersPricing = () => {
   return (
     <Container maxW="7xl" py="8" px="0">
+      <Alert status="warning">
+        <AlertIcon />
+        This Platform is for brands targeting students who want to target a larger bucket ,if you want to target district wise audience.{" "}
+      {" "}
+        <Link href="   https://platform.shikshafinder.com/" isExternal>
+          &nbsp; Platform with shiksha finder <ExternalLinkIcon mx="2px" />
+        </Link>
+      </Alert>
       <chakra.h2 fontSize="5xl" fontWeight="bold" textAlign="center" mb={5}>
         We guarantee results from our marketing platform 📈
       </chakra.h2>
