@@ -136,7 +136,7 @@ const DesktopNav = () => {
             <PopoverTrigger>
               <Box
                 as={Link}
-                href={navItem.href ?? "/form"}
+                href={navItem.href ?? "/marketingFormForIndustry"}
                 passHref
                 p={2}
                 fontSize={"sm"}
@@ -235,7 +235,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       <Box
         py={2}
         as={Link}
-        href={href ?? "/form"}
+        href={href ?? "/marketingFormForIndustry"}
         passHref
         justifyContent="space-between"
         alignItems="center"

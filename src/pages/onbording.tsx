@@ -129,10 +129,10 @@ export default function CaptionCarousel() {
                 </Text>
               </Stack>
               <Stack align="end">
-                <a href={"/form"}>
+                <a href={"/marketingFormForIndustry"}>
                   {" "}
                   <Button colorScheme="blackAlpha" variant="solid">
-                  Let's Begin 🚀
+                    Let's Begin 🚀
                   </Button>
                 </a>{" "}
               </Stack>

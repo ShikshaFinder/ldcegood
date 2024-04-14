@@ -16,26 +16,18 @@ function Navnew() {
         Explore 😎
       </MenuButton>
       <MenuList>
-        <Link href={"/form"}>
-          <MenuItem>
-            Create platform🚀
-          </MenuItem>
+        <Link href={"/marketingFormForIndustry"}>
+          <MenuItem>Create platform🚀</MenuItem>
         </Link>
         <Link href={"/profile"}>
-          <MenuItem>
-            My account
-          </MenuItem>
+          <MenuItem>My account</MenuItem>
         </Link>
         <MenuDivider />
         <Link href={"/marketing"}>
-          <MenuItem>
-            Market 💪🏻
-          </MenuItem>
+          <MenuItem>Market 💪🏻</MenuItem>
         </Link>
         <Link href={"/contest"}>
-          <MenuItem>
-            Participate in Contest
-          </MenuItem>
+          <MenuItem>Participate in Contest</MenuItem>
         </Link>
       </MenuList>
     </Menu>

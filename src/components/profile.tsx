@@ -44,7 +44,7 @@ function profile({
         <CardBody>
           <Wrap justifyContent={"center"} spacing={4} direction="column">
             <WrapItem>
-              <Link href={"/form"}>
+              <Link href={"/marketingFormForIndustry"}>
                 {" "}
                 <Avatar size="2xl" name={name} borderRadius={"3xl"} />{" "}
                 <FaEdit size={24} style={{ alignSelf: "flex-end" }} />
@@ -75,7 +75,6 @@ function profile({
             <WrapItem style={{ marginTop: "10px" }}>
               <FaHeart />
               <b
-                
                 style={{
                   textAlign: "center",
                   color: "#90CAF9",

@@ -99,7 +99,7 @@ export default function Home() {
             one of the most affordable and efficient marketing plans to reach
             out to your students.
           </Text>
-          <Link href={"/signup"}>
+          <Link href={"/marketingFormForIndustry"}>
             <Stack
               direction={{ base: "column", sm: "row" }}
               w={{ base: "100%", sm: "auto" }}

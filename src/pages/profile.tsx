@@ -40,7 +40,7 @@ function Profile() {
 
         setUserData(data);
       } catch (error) {
-        router.push("/form");
+        router.push("/marketingFormForIndustry");
       }
     }
 
