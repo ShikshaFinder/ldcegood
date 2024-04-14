@@ -177,7 +177,7 @@ const Parent = () => {
             teaching style, course highlights, and student testimonials. Make it
             informative and fun.
             <Link
-              href="https://platform.shikshafinder.com/marketing"
+              href="https://marketing.shikshafinder.com/marketing"
               isExternal
             >
               start marketing anything.
@@ -238,7 +238,7 @@ const Parent = () => {
               textDecoration="underline"
               cursor="pointer"
             >
-              <a href="https://platform.shikshafinder.com/marketing">
+              <a href="https://marketing.shikshafinder.com/marketing">
                 Shiksha Finder Marketing
               </a>
             </Text>{" "}

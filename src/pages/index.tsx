@@ -56,7 +56,7 @@ export default function Home() {
         title="Shiksha Finder"
         description="Show case the quality of education"
         openGraph={{
-          url: "https://platform.shikshafinder.com/",
+          url: "https://marekting.shikshafinder.com/",
           title: "Let's promote Education quality",
           description: "Home page of shiksha finder",
           images: [

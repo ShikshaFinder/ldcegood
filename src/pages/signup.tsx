@@ -170,13 +170,13 @@ export default function SignupCard() {
         <Text>
           By continuing you agree to our{" "}
           <a
-            href="https://platform.shikshafinder.com/privacypolicy"
+            href="https://marketing.shikshafinder.com/privacypolicy"
             // style={{color: "blue"}}
           >
             Privacy Policy
           </a>{" "}
           &{" "}
-          <a href="https://platform.shikshafinder.com/termsofservice">
+          <a href="https://marketing.shikshafinder.com/termsofservice">
             Terms of Service
           </a>
         </Text>
