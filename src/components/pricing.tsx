@@ -63,9 +63,9 @@ const ThreeTiersPricing = () => {
     <Container maxW="7xl" py="8" px="0">
       <Alert status="warning">
         <AlertIcon />
-        This Platform is for brands targeting students who want to target a larger bucket ,if you want to target district wise audience.{" "}
+        This Platform is for brands targeting students who want to target a larger bucket ,if you want to target district wise audience.{" "}then visit
       {" "}
-        <Link href="   https://platform.shikshafinder.com/" isExternal>
+        <Link href="   https://platform.shikshafinder.com/marketing" isExternal>
           &nbsp; Platform with shiksha finder <ExternalLinkIcon mx="2px" />
         </Link>
       </Alert>
