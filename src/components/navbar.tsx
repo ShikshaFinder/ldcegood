@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client";
+
 import {
   Box,
   Flex,
@@ -21,10 +22,8 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import { useAuthContext } from "@/context";
 
-export default function Navbar() {
-  const { user } = useAuthContext();
+export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -60,7 +59,7 @@ export default function Navbar() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            <Link href={"/"}> Shiksha Finder</Link>
+            Logo
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -74,48 +73,32 @@ export default function Navbar() {
           direction={"row"}
           spacing={6}
         >
-          {user && user.email ? (
-            <Button
-              as={Link}
-              href={"/profile"}
-              passHref
-              fontSize={"sm"}
-              fontWeight={400}
-              variant={"link"}
-            >
-              Profile
-            </Button>
-          ) : (
-            <>
-              <Button
-                as={Link}
-                href={"/login"}
-                passHref
-                fontSize={"sm"}
-                fontWeight={400}
-                variant={"link"}
-              >
-                Sign In
-              </Button>
-              <Button
-                as={Link}
-                href={"/signup"}
-                passHref
-                display={{ base: "none", md: "inline-flex" }}
-                fontSize={"sm"}
-                fontWeight={600}
-                color={"white"}
-                bg={"blue"}
-                _hover={{
-                  bg: "blue.300",
-                }}
-              >
-                Sign Up
-              </Button>
-            </>
-          )}
+          <Button
+            as={"a"}
+            fontSize={"sm"}
+            fontWeight={400}
+            variant={"link"}
+            href={"#"}
+          >
+            Sign In
+          </Button>
+          <Button
+            as={"a"}
+            display={{ base: "none", md: "inline-flex" }}
+            fontSize={"sm"}
+            fontWeight={600}
+            color={"white"}
+            bg={"pink.400"}
+            href={"#"}
+            _hover={{
+              bg: "pink.300",
+            }}
+          >
+            Sign Up
+          </Button>
         </Stack>
       </Flex>
+
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
@@ -135,10 +118,9 @@ const DesktopNav = () => {
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Box
-                as={Link}
-                href={navItem.href ?? "/marketingFormForIndustry"}
-                passHref
+                as="a"
                 p={2}
+                href={navItem.href ?? "#"}
                 fontSize={"sm"}
                 fontWeight={500}
                 color={linkColor}
@@ -177,20 +159,19 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
     <Box
-      as={Link}
+      as="a"
       href={href}
-      passHref
       role={"group"}
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("blue.50", "gray.900") }}
+      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: "blue.400" }}
+            _groupHover={{ color: "pink.400" }}
             fontWeight={500}
           >
             {label}
@@ -206,7 +187,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           align={"center"}
           flex={1}
         >
-          <Icon color={"blue.400"} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Box>
@@ -234,11 +215,11 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
     <Stack spacing={4} onClick={children && onToggle}>
       <Box
         py={2}
-        as={Link}
-        href={href ?? "/marketingFormForIndustry"}
-        passHref
+        as="a"
+        href={href ?? "#"}
         justifyContent="space-between"
         alignItems="center"
+        opacity={1}
         _hover={{
           textDecoration: "none",
         }}
@@ -271,8 +252,8 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
-              <Box as={Link} key={child.label} href={child.href} passHref>
-                <Box py={2}>{child.label}</Box>
+              <Box as="a" key={child.label} py={2} href={child.href}>
+                {child.label}
               </Box>
             ))}
         </Stack>
@@ -290,37 +271,41 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Create & Edit your campaign",
+    label: "Inspiration",
     children: [
       {
-        label: "Create & Edit Your platform",
-        subLabel: "Let the world know the quality of your education",
-        href: "/marketingFormForIndustry",
+        label: "Explore Design Work",
+        subLabel: "Trending Design to inspire you",
+        href: "#",
+      },
+      {
+        label: "New & Noteworthy",
+        subLabel: "Up-and-coming Designers",
+        href: "#",
       },
     ],
   },
   {
-    label: "View Analytics",
-    href: "/analytics",
+    label: "Find Work",
     children: [
       {
-        label: "See Your ads ",
-        subLabel: "See how much traction you have got till today?",
-        href: "/analytics",
+        label: "Job Board",
+        subLabel: "Find your dream design job",
+        href: "#",
       },
       {
-        label: "Contact Us ",
-        subLabel: "We are ready to solve your any problem with shiksha finder",
-        href: "/contactus",
+        label: "Freelance Projects",
+        subLabel: "An exclusive list for contract work",
+        href: "#",
       },
     ],
   },
   {
-    label: "Blog",
-    href: "/blog",
+    label: "Learn Design",
+    href: "#",
   },
   {
-    label: "Start Marketing",
-    href: "/marketing",
+    label: "aboutldce",
+    href: "/aboutldce",
   },
 ];

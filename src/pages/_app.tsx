@@ -18,7 +18,7 @@ require("dotenv").config();
 
 
 const inter = Inter({ subsets: ["latin"] });
-const supabaseUrl = "https://qgkjakomwapzuhvnrvgr.supabase.co";
+const supabaseUrl = "https://jbvhauibwcvogbuiqynl.supabase.co";
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY ?? "";
 
 export default function App({
@@ -55,8 +55,8 @@ export default function App({
         <ChakraProvider theme={theme}>
           <AuthContextProvider>
             <div className={inter.className}>
-              <Navbar />
             </div>
+            <Navbar/>
             <Component {...pageProps} />
           </AuthContextProvider>
         </ChakraProvider>
