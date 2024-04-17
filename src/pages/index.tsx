@@ -3,13 +3,14 @@ import { useAuthContext } from "@/context";
 import { NextSeo } from "next-seo";
 import Preloader from "../components/Preloader";
 import Announcement from "../components/Announcements";
-import Card from "../components/card";
+// import Card from "../components/card
 import Slider from "../components/slider";
 import { useEffect, useState } from "react";
 import Placement from "../components/Placement";
 import SliderForNews from "../components/sliderForNews";
 import { chakra } from "@chakra-ui/react";
 import Sliderr from "../components/sliderrr";
+import MiniCard from "../components/minicard";
 import Footer from "../components/footer";
 
 export default function Home() {
@@ -52,28 +53,36 @@ export default function Home() {
 
       {isVisible && <Preloader />}
       <Slider />
+      <div style={{ transform: "translate(0px,-200px)", marginInline: "auto" }}>
+        <MiniCard />
+      </div>
+
       <br />
       <Announcement />
       <br />
-      <chakra.span
-        color="-moz-initial"
-        bg="linear-gradient(transparent 90%,#FF0000 50%)"
-        fontSize="3xl"
-      >
-        Important News
-      </chakra.span>
+      <div style={{ width: "80%", marginInline: "auto" }}>
+        <chakra.span
+          color="-moz-initial"
+          bg="linear-gradient(transparent 90%,#FF0000 50%)"
+          fontSize="3xl"
+        >
+          Important News
+        </chakra.span>
+      </div>
       <SliderForNews />
-<br />
-      <chakra.span
-        color="-moz-initial"
-        bg="linear-gradient(transparent 90%,#3ff2f2 50%)"
-        fontSize="3xl"
-      >
-        Events
-      </chakra.span>
+      <br />
+      <div style={{ width: "80%", marginInline: "auto" }}>
+        <chakra.span
+          color="-moz-initial"
+          bg="linear-gradient(transparent 90%,#FF0000 50%)"
+          fontSize="3xl"
+        >
+          Events
+        </chakra.span>
+      </div>
 
       <Sliderr />
-<br />
+      <br />
       <Placement />
       <br />
       <img

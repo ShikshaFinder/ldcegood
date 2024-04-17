@@ -7,12 +7,12 @@ import {
   Heading,
   Text,
   Container,
+  Grid,
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
-import { Card, CardHeader, CardBody, CardFooter, Button } from "@chakra-ui/react";
 
 // Settings for the slider
 const settings = {
@@ -107,7 +107,6 @@ export default function CaptionCarousel() {
       >
         <BiRightArrowAlt size="40px" />
       </IconButton>
-      
 
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
@@ -136,13 +135,11 @@ export default function CaptionCarousel() {
                 </Heading>
                 <Text fontSize={{ base: "md", lg: "lg" }} color="GrayText">
                   {card.text}
-                </Text>
+                 </Text>
               </Stack>
             </Container>
-          
           </Box>
         ))}
-        
       </Slider>
     </Box>
   );
