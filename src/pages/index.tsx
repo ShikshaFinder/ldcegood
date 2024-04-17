@@ -6,7 +6,7 @@ import Announcement from "../components/Announcements";
 import Card from "../components/card";
 import Slider from "../components/slider";
 import { useEffect, useState } from "react";
-import { Grid, Stack } from "@chakra-ui/react";
+import Placement from "../components/Placement";
 import SliderForNews from "../components/sliderForNews";
 import { chakra } from "@chakra-ui/react";
 import Sliderr from "../components/sliderrr"
@@ -71,6 +71,8 @@ export default function Home() {
       </chakra.span>
 
       <Sliderr />
+
+      <Placement/>
       <Footer />
     </>
   );

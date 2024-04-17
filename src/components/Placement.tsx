@@ -6,17 +6,17 @@ function Placement() {
     <>
       <Card>
         <CardHeader>
-          <Heading size="md">Client Report</Heading>
+          <Heading size="md">LD College of Enginnering Placements</Heading>
         </CardHeader>
 
         <CardBody>
           <Stack divider={<StackDivider />} spacing="4">
             <Box>
               <Heading size="xs" textTransform="uppercase">
-                Summary
+                Placement
               </Heading>
               <Text pt="2" fontSize="sm">
-                View a summary of all your clients over the last month.
+                akdjbfkdz kcjvbsjbvos sdjbvskd vsodjbojfbv
               </Text>
             </Box>
             <Box>
@@ -24,7 +24,7 @@ function Placement() {
                 Overview
               </Heading>
               <Text pt="2" fontSize="sm">
-                Check out the overview of your clients.
+                adjbjsbcvn
               </Text>
             </Box>
             <Box>
@@ -32,9 +32,9 @@ function Placement() {
                 Analysis
               </Heading>
               <Text pt="2" fontSize="sm">
-                See a detailed analysis of all your business clients.
+                kdjbisbvnks vn cn kcjbvkjbcv
               </Text>
-              <Button colorScheme="blue">Button</Button>
+              <Button colorScheme="blue">Know More</Button>
             </Box>
           </Stack>
         </CardBody>
