@@ -1,23 +1,26 @@
 import React from 'react'
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react'
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink,Box } from '@chakra-ui/react'
 
 function MiniNav() {
   return (
-    <div >
-      <Breadcrumb separator="-">
-        <BreadcrumbItem>
-          <BreadcrumbLink href="#">Home</BreadcrumbLink>
-        </BreadcrumbItem>
+    <Box
+    bg={"red.100"}>
+      <div>
+        <Breadcrumb separator="-">
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#">Home</BreadcrumbLink>
+          </BreadcrumbItem>
 
-        <BreadcrumbItem>
-          <BreadcrumbLink href="#">About</BreadcrumbLink>
-        </BreadcrumbItem>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#">About</BreadcrumbLink>
+          </BreadcrumbItem>
 
-        <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink href="#">Contact</BreadcrumbLink>
-        </BreadcrumbItem>
-      </Breadcrumb>
-    </div>
+          <BreadcrumbItem isCurrentPage>
+            <BreadcrumbLink href="#">Contact</BreadcrumbLink>
+          </BreadcrumbItem>
+        </Breadcrumb>
+      </div>
+    </Box>
   );
 }
 

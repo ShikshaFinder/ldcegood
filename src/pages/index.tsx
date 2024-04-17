@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import Placement from "../components/Placement";
 import SliderForNews from "../components/sliderForNews";
 import { chakra } from "@chakra-ui/react";
-import Sliderr from "../components/sliderrr"
+import Sliderr from "../components/sliderrr";
 import Footer from "../components/footer";
 
 export default function Home() {
@@ -52,7 +52,9 @@ export default function Home() {
 
       {isVisible && <Preloader />}
       <Slider />
+      <br />
       <Announcement />
+      <br />
       <chakra.span
         color="-moz-initial"
         bg="linear-gradient(transparent 90%,#FF0000 50%)"
@@ -61,7 +63,7 @@ export default function Home() {
         Important News
       </chakra.span>
       <SliderForNews />
-
+<br />
       <chakra.span
         color="-moz-initial"
         bg="linear-gradient(transparent 90%,#3ff2f2 50%)"
@@ -71,8 +73,15 @@ export default function Home() {
       </chakra.span>
 
       <Sliderr />
+<br />
+      <Placement />
+      <br />
+      <img
+        src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="horizon"
+        style={{ height: "55px", width: "100%" }}
+      />
 
-      <Placement/>
       <Footer />
     </>
   );

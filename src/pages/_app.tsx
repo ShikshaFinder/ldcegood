@@ -3,7 +3,7 @@ import {
   extendTheme,
   ThemeConfig,
 } from "@chakra-ui/react";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Navbar from "../components/navbar";
 import { type AppProps } from "next/app";
 import { createPagesBrowserClient } from "@supabase/auth-helpers-nextjs";
@@ -16,7 +16,7 @@ import Head from "next/head";
 require("dotenv").config();
 import MiniNav from "@/components/miniNav";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ["latin"] });
 const supabaseUrl = "https://jbvhauibwcvogbuiqynl.supabase.co";
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY ?? "";
 
@@ -51,8 +51,18 @@ export default function App({
         </Head>
         <ChakraProvider theme={theme}>
           <AuthContextProvider>
-            <div className={inter.className}></div>
-            <div style={{ display: "flex", justifyContent: "end" }}>
+            
+              {" "}
+              <div className={inter.className}></div>
+           
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "end",
+                background: "#fad7d4",
+              }}
+            >
+              {" "}
               <MiniNav />
             </div>
             <Navbar />
