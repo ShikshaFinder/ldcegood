@@ -3,7 +3,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react'
 
 function MiniNav() {
   return (
-   
+    <div >
       <Breadcrumb separator="-">
         <BreadcrumbItem>
           <BreadcrumbLink href="#">Home</BreadcrumbLink>
@@ -17,7 +17,7 @@ function MiniNav() {
           <BreadcrumbLink href="#">Contact</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
-    
+    </div>
   );
 }
 

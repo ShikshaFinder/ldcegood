@@ -45,19 +45,18 @@ export default function App({
         supabaseClient={supabaseClient}
         initialSession={pageProps.initialSession}
       >
-
         <Head>
           <title>Shiksha Finder</title>
           <meta property="og:title" content="Shiksha Finder" key="title" />
         </Head>
         <ChakraProvider theme={theme}>
           <AuthContextProvider>
-            <div className={inter.className}>
+            <div className={inter.className}></div>
+            <div style={{ display: "flex", justifyContent: "end" }}>
+              <MiniNav />
             </div>
-            <MiniNav/>
-            <Navbar/>
+            <Navbar />
             <Component {...pageProps} />
-            
           </AuthContextProvider>
         </ChakraProvider>
       </SessionContextProvider>

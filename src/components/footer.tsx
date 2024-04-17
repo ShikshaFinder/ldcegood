@@ -9,6 +9,8 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  Icon,
+  Image,
 } from "@chakra-ui/react";
 
 
@@ -34,11 +36,14 @@ export default function LargeWithLogoLeft() {
         >
           <Stack spacing={6}>
             <Box>
-              <img src="/image.png" alt="" />
+              <Image
+                boxSize="100px"
+                objectFit="cover"
+                src="/image.png"
+                alt="Dan Abramov"
+              />
             </Box>
-            <Text fontSize={"sm"}>
-              © LDCE,Ahmedabad
-            </Text>
+            <Text fontSize={"sm"}>© LDCE,Ahmedabad</Text>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Product</ListHeader>
