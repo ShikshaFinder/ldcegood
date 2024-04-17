@@ -1,28 +1,32 @@
 import Head from "next/head";
 import { useAuthContext } from "@/context";
 import { NextSeo } from "next-seo";
-import { SimpleGrid } from "@chakra-ui/react";
-import { FcAdvertising, FcBullish, FcMoneyTransfer } from "react-icons/fc";
-import Link from "next/link";
-import { ReactElement } from "react";
+import Preloader from "../components/preloader";
+import { AnimatePresence, motion } from "framer-motion";
+
+
 import Slider from "../components/slider";
+import { useEffect, useState } from "react";
 
 
-import {
-  Container,
-  chakra,
-  Stack,
-  Text,
-  Button,
-  Box,
-  Flex,
-  Icon,
-} from "@chakra-ui/react";
+
 
 
 
 export default function Home() {
   const { user } = useAuthContext();
+  const [isVisible, setIsVisible] = useState(true);
+
+  
+ useEffect(() => {
+   const timer = setTimeout(() => {
+     setIsVisible(false);
+   }, 3000);
+
+   // Clear the timer when the component unmounts to avoid memory leaks
+   return () => clearTimeout(timer);
+ }, []);
+    
   return (
     <>
       <NextSeo
@@ -44,13 +48,13 @@ export default function Home() {
         }}
       />
       <Head>
-        <meta
-          name="keywords"
-          content="LDCE"
-        />
+        <meta name="keywords" content="LDCE" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-<Slider/>
+
+      {isVisible && <Preloader />}
+
+      <Slider />
     </>
   );
 }
