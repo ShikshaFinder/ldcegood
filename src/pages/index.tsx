@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useAuthContext } from "@/context";
 import { NextSeo } from "next-seo";
-import Preloader from "../components/preloader";
+import Preloader from "../components/Preloader";
 import { AnimatePresence, motion } from "framer-motion";
 
 
