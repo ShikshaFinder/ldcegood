@@ -2,12 +2,11 @@ import Head from "next/head";
 import { useAuthContext } from "@/context";
 import { NextSeo } from "next-seo";
 import Preloader from "../components/Preloader";
-import { AnimatePresence, motion } from "framer-motion";
-
-
+import Announcement from "../components/Announcements";
+import Card from "../components/card";
 import Slider from "../components/slider";
 import { useEffect, useState } from "react";
-
+import { Grid } from "@chakra-ui/react";  
 
 
 
@@ -21,7 +20,7 @@ export default function Home() {
  useEffect(() => {
    const timer = setTimeout(() => {
      setIsVisible(false);
-   }, 3000);
+   }, 3500);
 
    // Clear the timer when the component unmounts to avoid memory leaks
    return () => clearTimeout(timer);
@@ -53,8 +52,15 @@ export default function Home() {
       </Head>
 
       {isVisible && <Preloader />}
-
       <Slider />
+      <Announcement />
+      <Grid
+        templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+        gap={0}
+      >
+        {" "}
+        <Card /> <Card /> <Card /> <Card /> 
+      </Grid>
     </>
   );
 }
