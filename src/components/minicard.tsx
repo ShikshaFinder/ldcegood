@@ -26,7 +26,7 @@ function minicard() {
         >
           <WarningIcon w={100} h={100} color="white" />
           <Text fontSize="3xl" color={"white"}>
-            (6xl) In love with React & Next
+           Startup
           </Text>
         </div>
       </Box>
@@ -40,7 +40,7 @@ function minicard() {
         >
           <WarningIcon w={100} h={100} color="white" />
           <Text fontSize="3xl" color={"white"}>
-            (6xl) In love with React & Next
+            News
           </Text>
         </div>
       </Box>
@@ -54,7 +54,7 @@ function minicard() {
         >
           <WarningIcon w={100} h={100} color="white" />
           <Text fontSize="3xl" color={"white"}>
-            (6xl) In love with React & Next
+            Innovation
           </Text>
         </div>
       </Box>
@@ -68,7 +68,7 @@ function minicard() {
         >
           <WarningIcon w={100} h={100} color="white" />
           <Text fontSize="3xl" color={"white"}>
-            (6xl) In love with React & Next
+            Placement
           </Text>
         </div>
       </Box>
