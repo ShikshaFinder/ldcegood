@@ -88,6 +88,43 @@ export default function Home() {
           text="hello in the ldce there happeneed something"
         />{" "}
       </Grid>
+      <chakra.span
+        color="-moz-initial"
+        bg="linear-gradient(transparent 90%,#3ff2f2 50%)"
+        fontSize="3xl"
+      >
+        Events
+      </chakra.span>
+      <Grid
+        templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+        gap={0}
+      >
+        {" "}
+        <Card
+          name="LDce"
+          date="12-12-12"
+          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          text="hello in the ldce there happeneed something"
+        />{" "}
+        <Card
+          name="ldce"
+          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          date="12-11-14"
+          text="hello in the ldce there happeneed something"
+        />{" "}
+        <Card
+          name="ldce"
+          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          date="12-11-14"
+          text="hello in the ldce there happeneed something"
+        />{" "}
+        <Card
+          name="ldce"
+          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          date="12-11-14"
+          text="hello in the ldce there happeneed something"
+        />{" "}
+      </Grid>
     </>
   );
 }
