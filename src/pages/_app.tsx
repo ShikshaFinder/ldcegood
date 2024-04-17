@@ -11,11 +11,10 @@ import { SessionContextProvider, Session } from "@supabase/auth-helpers-react";
 import { useState } from "react";
 import AuthContextProvider from "@/context";
 import Head from "next/head";
-import { Analytics } from "@vercel/analytics/react";
 // const { BlobServiceClient } = require("@azure/storage-blob");
 // const { v1: uuidv1 } = require("uuid");
 require("dotenv").config();
-
+import MiniNav from "@/components/miniNav";
 
 const inter = Inter({ subsets: ["latin"] });
 const supabaseUrl = "https://jbvhauibwcvogbuiqynl.supabase.co";
@@ -46,7 +45,6 @@ export default function App({
         supabaseClient={supabaseClient}
         initialSession={pageProps.initialSession}
       >
-        <Analytics />
 
         <Head>
           <title>Shiksha Finder</title>
@@ -56,8 +54,10 @@ export default function App({
           <AuthContextProvider>
             <div className={inter.className}>
             </div>
+            <MiniNav/>
             <Navbar/>
             <Component {...pageProps} />
+            
           </AuthContextProvider>
         </ChakraProvider>
       </SessionContextProvider>

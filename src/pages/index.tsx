@@ -7,8 +7,10 @@ import Card from "../components/card";
 import Slider from "../components/slider";
 import { useEffect, useState } from "react";
 import { Grid, Stack } from "@chakra-ui/react";
-import { Heading } from "@chakra-ui/react";
+import SliderForNews from "../components/sliderForNews";
 import { chakra } from "@chakra-ui/react";
+import Sliderr from "../components/sliderrr"
+import Footer from "../components/footer";
 
 export default function Home() {
   const { user } = useAuthContext();
@@ -58,36 +60,8 @@ export default function Home() {
       >
         Important News
       </chakra.span>
-      <Grid
-        templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
-        gap={0}
-      >
-        {" "}
-        <Card
-          name="LDce"
-          date="12-12-12"
-          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          text="hello in the ldce there happeneed something"
-        />{" "}
-        <Card
-          name="ldce"
-          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          date="12-11-14"
-          text="hello in the ldce there happeneed something"
-        />{" "}
-        <Card
-          name="ldce"
-          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          date="12-11-14"
-          text="hello in the ldce there happeneed something"
-        />{" "}
-        <Card
-          name="ldce"
-          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          date="12-11-14"
-          text="hello in the ldce there happeneed something"
-        />{" "}
-      </Grid>
+      <SliderForNews />
+
       <chakra.span
         color="-moz-initial"
         bg="linear-gradient(transparent 90%,#3ff2f2 50%)"
@@ -95,36 +69,9 @@ export default function Home() {
       >
         Events
       </chakra.span>
-      <Grid
-        templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
-        gap={0}
-      >
-        {" "}
-        <Card
-          name="LDce"
-          date="12-12-12"
-          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          text="hello in the ldce there happeneed something"
-        />{" "}
-        <Card
-          name="ldce"
-          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          date="12-11-14"
-          text="hello in the ldce there happeneed something"
-        />{" "}
-        <Card
-          name="ldce"
-          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          date="12-11-14"
-          text="hello in the ldce there happeneed something"
-        />{" "}
-        <Card
-          name="ldce"
-          imageURL="https://images.unsplash.com/photo-1712312640787-a0b0cc94356e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          date="12-11-14"
-          text="hello in the ldce there happeneed something"
-        />{" "}
-      </Grid>
+
+      <Sliderr />
+      <Footer />
     </>
   );
 }

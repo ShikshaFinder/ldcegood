@@ -59,7 +59,7 @@ export default function WithSubnavigation() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            Logo
+            LD College Of Engineering
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -67,36 +67,6 @@ export default function WithSubnavigation() {
           </Flex>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            Sign In
-          </Button>
-          <Button
-            as={"a"}
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"pink.400"}
-            href={"#"}
-            _hover={{
-              bg: "pink.300",
-            }}
-          >
-            Sign Up
-          </Button>
-        </Stack>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
@@ -271,37 +241,37 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Inspiration",
+    label: "About",
     children: [
       {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
+        label: "About LDCE",
+        subLabel: "History and achivements",
         href: "#",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        label: "Acedemics",
+        subLabel: "Education and research",
         href: "#",
       },
     ],
   },
   {
-    label: "Find Work",
+    label: "Departments",
     children: [
       {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
+        label: "Deparments of LDCe",
+        subLabel: "Departments and faculty",
         href: "#",
       },
       {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
+        label: "Placements",
+        subLabel: "Our placement records",
         href: "#",
       },
     ],
   },
   {
-    label: "Learn Design",
+    label: " Innovation & Startups",
     href: "#",
   },
   {

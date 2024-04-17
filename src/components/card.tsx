@@ -21,7 +21,7 @@ import { text } from "stream/consumers";
 
 function ProductAddToCart({ name, imageURL, date,text}: { name: string; imageURL: string; date: string,text:string}) {
   return (
-    <Flex p={50} w="full" alignItems="center" justifyContent="center">
+    <Flex p={1} w="full" alignItems="center" justifyContent="center">
       <Box
         bg={useColorModeValue("white", "gray.800")}
         maxW="sm"
