@@ -15,7 +15,7 @@ function Academics() {
           bg="linear-gradient(transparent 90%,#FF0000 50%)"
           fontSize="4xl"
         >
-          Acadmics
+          Academics
         </chakra.span>
       </div>
       <br />
@@ -30,7 +30,6 @@ function Academics() {
           base: "80%",
           md: "87%",
           lg: "50%",
-        
         }}
       >
         <Grid
