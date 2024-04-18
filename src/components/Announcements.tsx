@@ -65,7 +65,7 @@ const Testimonials = () => {
             bg="linear-gradient(transparent 90%,#FF0000 50%)"
             fontSize="3xl"
           >
-            Important News
+            Announcements
           </chakra.span>
         </div>
         {/* <chakra.div maxH="400px" overflowY="auto"> */}{" "}

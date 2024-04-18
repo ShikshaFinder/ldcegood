@@ -13,7 +13,7 @@ function Academics() {
         <chakra.span
           color="-moz-initial"
           bg="linear-gradient(transparent 90%,#FF0000 50%)"
-          fontSize="3xl"
+          fontSize="5xl"
         >
           Acadmics
         </chakra.span>
@@ -106,8 +106,8 @@ function Academics() {
             }}
             border={"1px solid"}
           >
-            <WarningIcon w={100} h={100} />
-            <Text fontSize="3xl">Centers</Text>
+            <WarningIcon w={90} h={75} />
+            <Text fontSize="3xl">Departments</Text>
           </Box>{" "}
         </Grid>
       </chakra.div>

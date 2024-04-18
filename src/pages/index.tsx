@@ -86,7 +86,7 @@ export default function Home() {
           <chakra.span
             color="-moz-initial"
             bg="linear-gradient(transparent 90%,#FF0000 50%)"
-            fontSize="3xl"
+            fontSize="5xl"
           >
             Important News
           </chakra.span>
@@ -101,12 +101,13 @@ export default function Home() {
           <chakra.span
             color="-moz-initial"
             bg="linear-gradient(transparent 90%,#FF0000 50%)"
-            fontSize="3xl"
+            fontSize="5xl"
           >
             Events
           </chakra.span>
         </div>
         <Sliderr />
+        <br />
         <br />
 
         <br />
@@ -119,8 +120,10 @@ export default function Home() {
          
         >
           <Placement />
-          <img src="/gallary.png" alt="LDCE gallary" />
+          <br />
+          <img src="/gallary.png" alt="LDCE gallary" width={"100%"} />
         </Box>
+        <br />
         <br />
         <img
           src="https://home.iitd.ac.in/images/footer-bg.jpg"
