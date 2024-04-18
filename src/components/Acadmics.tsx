@@ -24,7 +24,7 @@ function Academics() {
           lineHeight={1.2}
           fontWeight="bold"
         >
-          404 Page Not Found
+            Academics
         </chakra.h1>
         <Box
           w="100%"
