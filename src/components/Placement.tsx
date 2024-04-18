@@ -4,17 +4,18 @@ import { Box, Card, CardBody, CardHeader, Heading, Stack, StackDivider, Text,But
 function Placement() {
   return (
     <>
+    <div style={{ width: "80%", marginInline: "auto" }}>
       <Card>
         <CardHeader>
-          <div style={{ width: "80%", marginInline: "auto" }}>
+          
             <chakra.span
               color="-moz-initial"
               bg="linear-gradient(transparent 90%,#FF0000 50%)"
               fontSize="3xl"
             >
-              Important News
+              Placement
             </chakra.span>
-          </div>{" "}
+     
         </CardHeader>
 
         <CardBody>
@@ -42,11 +43,14 @@ function Placement() {
               <Text pt="2" fontSize="sm">
                 kdjbisbvnks vn cn kcjbvkjbcv
               </Text>
+              <br />
               <Button colorScheme="blue">Know More</Button>
             </Box>
           </Stack>
         </CardBody>
+          
       </Card>
+      </div>
     </>
   );
 }

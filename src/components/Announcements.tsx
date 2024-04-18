@@ -36,22 +36,23 @@ const testimonials: TestimonialAttributes[] = [
     content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
       rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.`,
   },
-  {
-    name: "Nilay N Bhuptani",
-    position: "Director",
-    company: "LDCE",
+  // },
+  // {
+  //   name: "Nilay N Bhuptani",
+  //   position: "Director",
+  //   company: "LDCE",
 
-    content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.`,
-  },
-  {
-    name: "Nilay N Bhuptani",
-    position: "Director",
-    company: "LDCE",
+  //   content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+  //     rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.`,
+  // },
+  // {
+  //   name: "Nilay N Bhuptani",
+  //   position: "Director",
+  //   company: "LDCE",
 
-    content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.`,
-  },
+  //   content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+  //     rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.`,
+  // },
 ];
 
 const Testimonials = () => {
@@ -62,7 +63,7 @@ const Testimonials = () => {
           Important Announcements
         </chakra.h3>
       </Flex>
-      <chakra.div maxH="400px" overflowY="auto">
+      {/* <chakra.div maxH="400px" overflowY="auto"> */}
         {" "}
         {/* Change maxH and overflowY as needed */}
         <Container maxW="5xl" py={10} px={{ base: 5, md: 20 }}>
@@ -80,7 +81,7 @@ const Testimonials = () => {
                   textAlign="left"
                   maxW="4xl"
                 >
-                  <Icon as={ImQuotesLeft} w={8} h={8} color="gray.400" />
+                  {/* <Icon as={ImQuotesLeft} w={8} h={8} color="gray.400" /> */}
                   <Text fontSize="md" fontWeight="medium">
                     {obj.content}
                   </Text>
@@ -101,7 +102,7 @@ const Testimonials = () => {
             </Fragment>
           ))}
         </Container>
-      </chakra.div>
+      {/* </chakra.div> */}
     </>
   );
 };

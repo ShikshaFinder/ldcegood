@@ -12,6 +12,7 @@ import { chakra } from "@chakra-ui/react";
 import Sliderr from "../components/sliderrr";
 import MiniCard from "../components/minicard";
 import Footer from "../components/footer";
+import Acadmics from "@/components/Acadmics";
 
 export default function Home() {
   const { user } = useAuthContext();
@@ -50,11 +51,7 @@ export default function Home() {
         <meta name="keywords" content="LDCE" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      {isVisible && <Preloader />}{" "}
-  
-        {" "}
-        <Navbar />
-      
+      {isVisible && <Preloader />} <Navbar />
       <div style={{ position: "unset" }}>
         <Slider />
       </div>
@@ -66,40 +63,46 @@ export default function Home() {
         }}
       >
         <MiniCard />
+
+        <br />
+        <Announcement />
+        <br />
+        <div style={{ width: "80%", marginInline: "auto" }}>
+          <chakra.span
+            color="-moz-initial"
+            bg="linear-gradient(transparent 90%,#FF0000 50%)"
+            fontSize="3xl"
+          >
+            Important News
+          </chakra.span>
+        </div>
+        <SliderForNews />
+        <br />
+        <br />
+        <br /><br />
+        <div style={{ width: "80%", marginInline: "auto" }}>
+          <chakra.span
+            color="-moz-initial"
+            bg="linear-gradient(transparent 90%,#FF0000 50%)"
+            fontSize="3xl"
+          >
+            Events
+          </chakra.span>
+        </div>
+        <Sliderr />
+        <br />
+    
+        <br />
+        <Placement />
+        <br />
+        <img
+          src="https://home.iitd.ac.in/images/footer-bg.jpg"
+          alt="horizon"
+          style={{ height: "67px", width: "100%" }}
+        />
+        <Footer />
+        <Acadmics/>
       </div>
-      <br />
-      <Announcement />
-      <br />
-      <div style={{ width: "80%", marginInline: "auto" }}>
-        <chakra.span
-          color="-moz-initial"
-          bg="linear-gradient(transparent 90%,#FF0000 50%)"
-          fontSize="3xl"
-        >
-          Important News
-        </chakra.span>
-      </div>
-      <SliderForNews />
-      <br />
-      <div style={{ width: "80%", marginInline: "auto" }}>
-        <chakra.span
-          color="-moz-initial"
-          bg="linear-gradient(transparent 90%,#FF0000 50%)"
-          fontSize="3xl"
-        >
-          Events
-        </chakra.span>
-      </div>
-      <Sliderr />
-      <br />
-      <Placement />
-      <br />
-      <img
-        src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="horizon"
-        style={{ height: "55px", width: "100%" }}
-      />
-      <Footer />
     </>
   );
 }

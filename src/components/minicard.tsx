@@ -15,7 +15,6 @@ function minicard() {
         md: "60%",
         base: "90%",
       }}
-      
       marginInline={"auto"}
     >
       <Box w="100%" aspectRatio={"1/1"} bgColor={"red"}>
@@ -32,7 +31,14 @@ function minicard() {
           </Text>
         </div>
       </Box>
-      <Box w="100%" aspectRatio={"1/1"} bgColor={"red.100"}>
+      <Box
+        w="100%"
+        aspectRatio={"1/1"}
+        bgColor={{
+          base: "red.100",
+          md: "red.100",
+        }}
+      >
         <div
           style={{
             display: "flex",
@@ -46,7 +52,14 @@ function minicard() {
           </Text>
         </div>
       </Box>
-      <Box w="100%" aspectRatio={"1/1"} bgColor={"red.100"}>
+      <Box
+        w="100%"
+        aspectRatio={"1/1"}
+        bgColor={{
+          base: "red.100",
+          md: "red",
+        }}
+      >
         <div
           style={{
             display: "flex",
@@ -54,13 +67,33 @@ function minicard() {
             flexDirection: "column",
           }}
         >
-          <ViewIcon w={100} h={100} color="black" />
-          <Text fontSize="3xl" color={"black"}>
+          <ViewIcon
+            w={100}
+            h={100}
+            color={{
+              base: "black",
+              md: "white",
+            }}
+          />
+          <Text
+            fontSize="3xl"
+            color={{
+              base: "black",
+              md: "white",
+            }}
+          >
             Innovation
           </Text>
         </div>
       </Box>
-      <Box w="100%" aspectRatio={"1/1"} bgColor={"red"}>
+      <Box
+        w="100%"
+        aspectRatio={"1/1"}
+        bgColor={{
+          base: "red",
+          md: "red.100",
+        }}
+      >
         <div
           style={{
             display: "flex",
@@ -68,8 +101,21 @@ function minicard() {
             flexDirection: "column",
           }}
         >
-          <AtSignIcon w={100} h={100} color="white" />
-          <Text fontSize="3xl" color={"white"}>
+          <ViewIcon
+            w={100}
+            h={100}
+            color={{
+              base: "white",
+              md: "black",
+            }}
+          />
+          <Text
+            fontSize="3xl"
+            color={{
+              base: "white",
+              md: "black",
+            }}
+          >
             Placement
           </Text>
         </div>
