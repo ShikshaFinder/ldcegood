@@ -11,7 +11,7 @@ function Placement() {
             <chakra.span
               color="-moz-initial"
               bg="linear-gradient(transparent 90%,#FF0000 50%)"
-              fontSize="6xl"
+              fontSize="5xl"
             >
               Placement
             </chakra.span>

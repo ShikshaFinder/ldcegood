@@ -86,7 +86,7 @@ export default function Home() {
           <chakra.span
             color="-moz-initial"
             bg="linear-gradient(transparent 90%,#FF0000 50%)"
-            fontSize="5xl"
+            fontSize="3xl"
           >
             Important News
           </chakra.span>
@@ -101,7 +101,7 @@ export default function Home() {
           <chakra.span
             color="-moz-initial"
             bg="linear-gradient(transparent 90%,#FF0000 50%)"
-            fontSize="5xl"
+            fontSize="4xl"
           >
             Events
           </chakra.span>
