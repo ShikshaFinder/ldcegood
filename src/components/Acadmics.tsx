@@ -28,6 +28,7 @@ function Academics() {
         flexWrap={{
           base: "wrap",
           md: "nowrap",
+          
         }}
       >
         <Box

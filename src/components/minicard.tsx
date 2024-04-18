@@ -12,16 +12,25 @@ function minicard() {
       justifyItems={"center"}
       gap={0}
       w={{
-        md: "60%",
-        base: "90%",
+        md: "87%",
+        base: "60%",
+        lg: "50%",
       }}
       marginInline={"auto"}
+      justifyContent={"center"}
     >
-      <Box w="100%" aspectRatio={"1/1"} bgColor={"red"}>
+      <Box
+        w="100%"
+        aspectRatio={"1/1"}
+        bgColor={"red"}
+       
+      >
         <div
           style={{
             display: "flex",
             alignItems: "center",
+            alignContent: "center",
+            justifyContent: "center",
             flexDirection: "column",
           }}
         >

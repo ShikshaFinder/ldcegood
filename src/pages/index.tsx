@@ -51,8 +51,9 @@ export default function Home() {
         <meta name="keywords" content="LDCE" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      {isVisible && <Preloader />} <Navbar />
-      <div style={{ position: "unset" }}>
+      {isVisible && <Preloader />}
+       {/* <Navbar /> */}
+      <div style={{ position: "unset"}}>
         <Slider />
       </div>
       <div

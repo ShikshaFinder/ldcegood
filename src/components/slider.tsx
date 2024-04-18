@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
-// And react-slick as our Carousel Lib
+import Navbar from "./navbar";
 import Slider from "react-slick";
 
 // Settings for the slider
@@ -31,6 +31,7 @@ export default function CaptionCarousel() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState<Slider | null>(null);
+
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
@@ -79,6 +80,7 @@ export default function CaptionCarousel() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       {/* Left Icon */}
+      <Navbar />
       <IconButton
         aria-label="left-arrow"
         variant="ghost"
@@ -132,7 +134,7 @@ export default function CaptionCarousel() {
                 </Heading>
                 <Text fontSize={{ base: "md", lg: "lg" }} color="black">
                   {card.text}
-                 </Text>
+                </Text>
               </Stack>
             </Container>
           </Box>
