@@ -9,23 +9,27 @@ import { chakra } from "@chakra-ui/system";
 function Academics() {
   return (
     <>
-      <div
+            <div style={{ width: "80%", marginInline: "auto" }}>
+              <chakra.span
+                color="-moz-initial"
+                bg="linear-gradient(transparent 90%,#FF0000 50%)"
+                fontSize="3xl"
+              >
+               Acadmics
+              </chakra.span>
+            </div>
+      <chakra.div
         style={{
           display: "flex",
           width: "60%",
           margin: "auto",
           gap: "23px",
-          flexWrap: "wrap",
+        }}
+        flexWrap={{
+          base: "wrap",
+          md: "nowrap",
         }}
       >
-        <chakra.h1
-          color="white"
-          fontSize="4xl"
-          lineHeight={1.2}
-          fontWeight="bold"
-        >
-            Academics
-        </chakra.h1>
         <Box
           w="100%"
           aspectRatio={"1/1"}
@@ -80,7 +84,7 @@ function Academics() {
           <ViewIcon w={100} h={100} />
           <Text fontSize="3xl">Startup</Text>
         </Box>{" "}
-      </div>
+      </chakra.div>
     </>
   );
 }

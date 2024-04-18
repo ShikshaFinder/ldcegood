@@ -101,7 +101,7 @@ function minicard() {
             flexDirection: "column",
           }}
         >
-          <ViewIcon
+          <AtSignIcon
             w={100}
             h={100}
             color={{

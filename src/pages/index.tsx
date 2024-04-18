@@ -79,6 +79,7 @@ export default function Home() {
             Important News
           </chakra.span>
         </div>
+        <br />
         <SliderForNews />
         <br />
         <br />
