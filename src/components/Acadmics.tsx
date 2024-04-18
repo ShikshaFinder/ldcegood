@@ -4,6 +4,7 @@ import { StarIcon } from "@chakra-ui/icons";
 import{WarningIcon} from "@chakra-ui/icons";
 import{ViewIcon} from "@chakra-ui/icons";
 import { Grid, useColorModeValue } from "@chakra-ui/react";
+import { chakra } from "@chakra-ui/system";
 
 function Academics() {
   return (
@@ -17,6 +18,14 @@ function Academics() {
           flexWrap: "wrap",
         }}
       >
+        <chakra.h1
+          color="white"
+          fontSize="4xl"
+          lineHeight={1.2}
+          fontWeight="bold"
+        >
+          404 Page Not Found
+        </chakra.h1>
         <Box
           w="100%"
           aspectRatio={"1/1"}

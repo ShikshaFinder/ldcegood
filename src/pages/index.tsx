@@ -67,6 +67,9 @@ export default function Home() {
         <br />
         <Announcement />
         <br />
+        <br />
+          <Acadmics/>
+        <br />
         <div style={{ width: "80%", marginInline: "auto" }}>
           <chakra.span
             color="-moz-initial"
@@ -85,7 +88,7 @@ export default function Home() {
             color="-moz-initial"
             bg="linear-gradient(transparent 90%,#FF0000 50%)"
             fontSize="3xl"
-          >
+            >
             Events
           </chakra.span>
         </div>
@@ -101,7 +104,6 @@ export default function Home() {
           style={{ height: "67px", width: "100%" }}
         />
         <Footer />
-        <Acadmics/>
       </div>
     </>
   );
