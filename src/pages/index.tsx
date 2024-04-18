@@ -14,6 +14,7 @@ import MiniCard from "../components/minicard";
 import Footer from "../components/footer";
 import Acadmics from "@/components/Acadmics";
 import Aboutldce from "@/components/Aboutldce";
+import { Box } from "@chakra-ui/react";
 
 export default function Home() {
   const { user } = useAuthContext();
@@ -67,10 +68,16 @@ export default function Home() {
         <MiniCard />
 
         <br />
-        <div >
+        <Box
+          display="flex"
+          flexWrap={{
+            base: "wrap",
+            md: "nowrap",
+          }}
+        >
           <Announcement />
           <Aboutldce />
-        </div>
+        </Box>
         <br />
         <br />
         <Acadmics />
@@ -103,7 +110,17 @@ export default function Home() {
         <br />
 
         <br />
-        <Placement />
+        <Box
+          display="flex"
+          flexWrap={{
+            base: "wrap",
+            md: "nowrap",
+          }}
+         
+        >
+          <Placement />
+          <img src="/gallary.png" alt="LDCE gallary" />
+        </Box>
         <br />
         <img
           src="https://home.iitd.ac.in/images/footer-bg.jpg"

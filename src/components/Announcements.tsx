@@ -58,13 +58,17 @@ const testimonials: TestimonialAttributes[] = [
 const Testimonials = () => {
   return (
     <>
-      <Flex justifyContent="center" mb={8}>
-        <chakra.h3 fontSize="3xl" fontWeight="bold" mb={3}>
-          Important Announcements
-        </chakra.h3>
-      </Flex>
-      {/* <chakra.div maxH="400px" overflowY="auto"> */}
-        {" "}
+      <div>
+        <div style={{ width: "85%", marginInline: "auto" }}>
+          <chakra.span
+            color="-moz-initial"
+            bg="linear-gradient(transparent 90%,#FF0000 50%)"
+            fontSize="3xl"
+          >
+            Important News
+          </chakra.span>
+        </div>
+        {/* <chakra.div maxH="400px" overflowY="auto"> */}{" "}
         {/* Change maxH and overflowY as needed */}
         <Container maxW="5xl" py={10} px={{ base: 5, md: 20 }}>
           {testimonials.map((obj, index) => (
@@ -102,6 +106,7 @@ const Testimonials = () => {
             </Fragment>
           ))}
         </Container>
+      </div>{" "}
       {/* </chakra.div> */}
     </>
   );
