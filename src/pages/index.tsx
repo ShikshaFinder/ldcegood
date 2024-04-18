@@ -8,11 +8,12 @@ import Slider from "../components/slider";
 import { useEffect, useState } from "react";
 import Placement from "../components/Placement";
 import SliderForNews from "../components/sliderForNews";
-import { chakra } from "@chakra-ui/react";
+import { Flex, chakra } from "@chakra-ui/react";
 import Sliderr from "../components/sliderrr";
 import MiniCard from "../components/minicard";
 import Footer from "../components/footer";
 import Acadmics from "@/components/Acadmics";
+import Aboutldce from "@/components/Aboutldce";
 
 export default function Home() {
   const { user } = useAuthContext();
@@ -52,8 +53,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       {isVisible && <Preloader />}
-       {/* <Navbar /> */}
-      <div style={{ position: "unset"}}>
+      <Navbar />
+      <div style={{ position: "unset" }}>
         <Slider />
       </div>
       <div
@@ -66,10 +67,13 @@ export default function Home() {
         <MiniCard />
 
         <br />
-        <Announcement />
+        <div >
+          <Announcement />
+          <Aboutldce />
+        </div>
         <br />
         <br />
-          <Acadmics/>
+        <Acadmics />
         <br />
         <div style={{ width: "80%", marginInline: "auto" }}>
           <chakra.span
@@ -84,19 +88,20 @@ export default function Home() {
         <SliderForNews />
         <br />
         <br />
-        <br /><br />
+        <br />
+        <br />
         <div style={{ width: "80%", marginInline: "auto" }}>
           <chakra.span
             color="-moz-initial"
             bg="linear-gradient(transparent 90%,#FF0000 50%)"
             fontSize="3xl"
-            >
+          >
             Events
           </chakra.span>
         </div>
         <Sliderr />
         <br />
-    
+
         <br />
         <Placement />
         <br />

@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
-import Navbar from "./navbar";
 import Slider from "react-slick";
 
 // Settings for the slider
@@ -105,7 +104,6 @@ export default function CaptionCarousel() {
       >
         <BiRightArrowAlt size="40px" />
       </IconButton>
-      <Navbar />
 
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
