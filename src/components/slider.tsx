@@ -43,23 +43,20 @@ export default function CaptionCarousel() {
     {
       title: "Design Projects 1",
       text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
-      image: `//wsrv.nl/?url=${encodeURIComponent(
-        "drive.google.com/uc?export=view&id=1l00yr-zdZyJVCkjYoJcmMsSotM1OkA77"
-      )}`,
+      image:
+        "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Design Projects 2",
       text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
-      image: `//wsrv.nl/?url=${encodeURIComponent(
-        "drive.google.com/uc?export=view&id=1zaIlH8I9dqNz7l6dKbgPTf3G_tUnGI8C"
-      )}`,
+      image:
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Design Projects 3",
       text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
-      image: `//wsrv.nl/?url=${encodeURIComponent(
-        "drive.google.com/uc?export=view&id=1Fh9TvhQoiq_kelvqYQ58nC0ai7dd3khM"
-      )}`,
+      image:
+        "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
@@ -89,7 +86,7 @@ export default function CaptionCarousel() {
         left={side}
         top={top}
         transform={"translate(0%, -50%)"}
-        zIndex={2}
+        zIndex={0}
         onClick={() => slider?.slickPrev()}
       >
         <BiLeftArrowAlt size="40px" />
@@ -102,7 +99,7 @@ export default function CaptionCarousel() {
         right={side}
         top={top}
         transform={"translate(0%, -50%)"}
-        zIndex={2}
+        zIndex={0}
         onClick={() => slider?.slickNext()}
       >
         <BiRightArrowAlt size="40px" />
@@ -133,7 +130,7 @@ export default function CaptionCarousel() {
                 <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
                   {card.title}
                 </Heading>
-                <Text fontSize={{ base: "md", lg: "lg" }} color="GrayText">
+                <Text fontSize={{ base: "md", lg: "lg" }} color="black">
                   {card.text}
                  </Text>
               </Stack>

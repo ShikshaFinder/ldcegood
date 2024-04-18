@@ -69,16 +69,18 @@ export default function LargeWithNewsletter() {
           templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}
           spacing={8}
         >
-          <Stack spacing={6}>
-           <Box>
-             <Image
-                boxSize="100px"
+          <Stack spacing={6} align="center">
+            {" "}
+            {/* Add align="center" to center the content */}
+            <Box>
+              <Image
+                boxSize={{ base: "80px", md: "100px" }} // Adjust size for responsiveness
                 objectFit="cover"
                 src="/image.png"
-                alt="Dan Abramov"
+                alt="LD College, Ahmedabad" // Update alt text for accessibility
               />
             </Box>
-            <Text fontSize={"sm"}>© LDCE,Ahmedabad</Text>
+            <Text fontSize={"sm"}>© LDCE, Ahmedabad</Text>
             <Stack direction={"row"} spacing={6}>
               <SocialButton label={"Twitter"} href={"#"}>
                 <FaTwitter />

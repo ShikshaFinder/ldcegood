@@ -20,7 +20,7 @@ interface TestimonialAttributes {
 
 const testimonials: TestimonialAttributes[] = [
   {
-    name: "Dr. Prof. Rajul Gajjar",
+    name: "Nilay N Bhuptani",
     position: "Principal ",
     company: "LDCE",
 
@@ -29,7 +29,7 @@ const testimonials: TestimonialAttributes[] = [
       risus at semper`,
   },
   {
-    name: "Dr. Prof. Rajul Gajjar",
+    name: "Nilay N Bhuptani",
     position: "Director",
     company: "LDCE",
 
@@ -37,7 +37,7 @@ const testimonials: TestimonialAttributes[] = [
       rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.`,
   },
   {
-    name: "Dr. Prof. Rajul Gajjar",
+    name: "Nilay N Bhuptani",
     position: "Director",
     company: "LDCE",
 
@@ -45,7 +45,7 @@ const testimonials: TestimonialAttributes[] = [
       rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.`,
   },
   {
-    name: "Dr. Prof. Rajul Gajjar",
+    name: "Nilay N Bhuptani",
     position: "Director",
     company: "LDCE",
 

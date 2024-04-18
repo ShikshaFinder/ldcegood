@@ -1,12 +1,20 @@
 import React from 'react'
-import { Box, Card, CardBody, CardHeader, Heading, Stack, StackDivider, Text,Button } from '@chakra-ui/react'
+import { Box, Card, CardBody, CardHeader, Heading, Stack, StackDivider, Text,Button ,chakra} from '@chakra-ui/react'
 
 function Placement() {
   return (
     <>
       <Card>
         <CardHeader>
-          <Heading size="md">LD College of Enginnering Placements</Heading>
+          <div style={{ width: "80%", marginInline: "auto" }}>
+            <chakra.span
+              color="-moz-initial"
+              bg="linear-gradient(transparent 90%,#FF0000 50%)"
+              fontSize="3xl"
+            >
+              Important News
+            </chakra.span>
+          </div>{" "}
         </CardHeader>
 
         <CardBody>
