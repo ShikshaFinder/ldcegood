@@ -80,7 +80,6 @@ export default function CaptionCarousel() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       {/* Left Icon */}
-      <Navbar />
       <IconButton
         aria-label="left-arrow"
         variant="ghost"
@@ -106,6 +105,7 @@ export default function CaptionCarousel() {
       >
         <BiRightArrowAlt size="40px" />
       </IconButton>
+      <Navbar />
 
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>

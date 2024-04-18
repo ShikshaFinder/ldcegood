@@ -20,7 +20,6 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import { color } from "framer-motion";
 
 interface NavItem {
   label: string;
@@ -105,8 +104,7 @@ export default function WithSubnavigation() {
             w={{
               md: "2%",
               base: "20%",
-            }
-          }
+            }}
           >
             <img src="/image.png" alt="LD college logo" />
           </Box>
@@ -130,7 +128,7 @@ const DesktopNav: React.FC = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <div style={{ color: "transparent" }}>
+    <div>
       <Stack direction={"row"} spacing={4}>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>

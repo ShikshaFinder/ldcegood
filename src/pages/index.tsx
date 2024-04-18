@@ -58,7 +58,7 @@ export default function Home() {
       </div>
       <div
         style={{
-          transform: "translate(0px,-200px)",
+          transform: "translate(0px,-170px)",
           marginInline: "auto",
           position: "relative",
         }}
