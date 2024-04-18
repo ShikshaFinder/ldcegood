@@ -1,6 +1,6 @@
 import { Grid, Box, Text } from "@chakra-ui/react";
 import React from "react";
-import { PhoneIcon, AddIcon, WarningIcon } from "@chakra-ui/icons";
+import { ViewIcon, StarIcon, WarningIcon, AtSignIcon } from "@chakra-ui/icons";
 
 function minicard() {
   return (
@@ -10,10 +10,12 @@ function minicard() {
         md: "repeat(4, 1fr)",
       }}
       justifyItems={"center"}
-      gap={1}
+      gap={0}
       w={{
-        md: "70%",
+        md: "60%",
+        base: "90%",
       }}
+      
       marginInline={"auto"}
     >
       <Box w="100%" aspectRatio={"1/1"} bgColor={"red"}>
@@ -24,13 +26,13 @@ function minicard() {
             flexDirection: "column",
           }}
         >
-          <WarningIcon w={100} h={100} color="white" />
+          <StarIcon w={100} h={100} color="white" />
           <Text fontSize="3xl" color={"white"}>
-           Startup
+            Startup
           </Text>
         </div>
       </Box>
-      <Box w="100%" aspectRatio={"1/1"} bgColor={"red.400"}>
+      <Box w="100%" aspectRatio={"1/1"} bgColor={"red.100"}>
         <div
           style={{
             display: "flex",
@@ -38,13 +40,13 @@ function minicard() {
             flexDirection: "column",
           }}
         >
-          <WarningIcon w={100} h={100} color="white" />
-          <Text fontSize="3xl" color={"white"}>
+          <WarningIcon w={100} h={100} color="black" />
+          <Text fontSize="3xl" color={"black"}>
             News
           </Text>
         </div>
       </Box>
-      <Box w="100%" aspectRatio={"1/1"} bgColor={"red.400"}>
+      <Box w="100%" aspectRatio={"1/1"} bgColor={"red.100"}>
         <div
           style={{
             display: "flex",
@@ -52,8 +54,8 @@ function minicard() {
             flexDirection: "column",
           }}
         >
-          <WarningIcon w={100} h={100} color="white" />
-          <Text fontSize="3xl" color={"white"}>
+          <ViewIcon w={100} h={100} color="black" />
+          <Text fontSize="3xl" color={"black"}>
             Innovation
           </Text>
         </div>
@@ -66,7 +68,7 @@ function minicard() {
             flexDirection: "column",
           }}
         >
-          <WarningIcon w={100} h={100} color="white" />
+          <AtSignIcon w={100} h={100} color="white" />
           <Text fontSize="3xl" color={"white"}>
             Placement
           </Text>

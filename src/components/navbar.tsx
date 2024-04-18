@@ -1,11 +1,9 @@
-"use client";
-
+import React from "react";
 import {
   Box,
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Icon,
@@ -23,11 +21,59 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 
+interface NavItem {
+  label: string;
+  subLabel?: string;
+  children?: NavItem[];
+  href?: string;
+}
+
+const NAV_ITEMS: NavItem[] = [
+  {
+    label: "About",
+    children: [
+      {
+        label: "About LDCE",
+        subLabel: "History and achievements",
+        href: "#",
+      },
+      {
+        label: "Academics",
+        subLabel: "Education and research",
+        href: "#",
+      },
+    ],
+  },
+  {
+    label: "Departments",
+    children: [
+      {
+        label: "Departments of LDCE",
+        subLabel: "Departments and faculty",
+        href: "#",
+      },
+      {
+        label: "Placements",
+        subLabel: "Our placement records",
+        href: "#",
+      },
+    ],
+  },
+  {
+    label: "Innovation & Startups",
+    href: "#",
+  },
+  {
+    label: "aboutldce",
+    href: "/aboutldce",
+  },
+];
+
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box bg="transparent">
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
@@ -54,19 +100,20 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
+          <Box
+            w={{
+              md: "2%",
+              base: "20%",
+            }
+          }
           >
-            LD College Of Engineering
-          </Text>
+            <img src="/image.png" alt="LD college logo" />
+          </Box>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
         </Flex>
-
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
@@ -76,7 +123,7 @@ export default function WithSubnavigation() {
   );
 }
 
-const DesktopNav = () => {
+const DesktopNav: React.FC = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
@@ -126,7 +173,7 @@ const DesktopNav = () => {
   );
 };
 
-const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+const DesktopSubNav: React.FC<NavItem> = ({ label, href, subLabel }) => {
   return (
     <Box
       as="a"
@@ -139,11 +186,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
-          <Text
-            transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
-            fontWeight={500}
-          >
+          <Text transition={"all .3s ease"} fontWeight={500}>
             {label}
           </Text>
           <Text fontSize={"sm"}>{subLabel}</Text>
@@ -152,7 +195,6 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           transition={"all .3s ease"}
           transform={"translateX(-10px)"}
           opacity={0}
-          _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
           justify={"flex-end"}
           align={"center"}
           flex={1}
@@ -164,7 +206,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   );
 };
 
-const MobileNav = () => {
+const MobileNav: React.FC = () => {
   return (
     <Stack
       bg={useColorModeValue("white", "gray.800")}
@@ -178,7 +220,7 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label, children, href }: NavItem) => {
+const MobileNavItem: React.FC<NavItem> = ({ label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -231,51 +273,3 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
     </Stack>
   );
 };
-
-interface NavItem {
-  label: string;
-  subLabel?: string;
-  children?: Array<NavItem>;
-  href?: string;
-}
-
-const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: "About",
-    children: [
-      {
-        label: "About LDCE",
-        subLabel: "History and achivements",
-        href: "#",
-      },
-      {
-        label: "Acedemics",
-        subLabel: "Education and research",
-        href: "#",
-      },
-    ],
-  },
-  {
-    label: "Departments",
-    children: [
-      {
-        label: "Deparments of LDCe",
-        subLabel: "Departments and faculty",
-        href: "#",
-      },
-      {
-        label: "Placements",
-        subLabel: "Our placement records",
-        href: "#",
-      },
-    ],
-  },
-  {
-    label: " Innovation & Startups",
-    href: "#",
-  },
-  {
-    label: "aboutldce",
-    href: "/aboutldce",
-  },
-];

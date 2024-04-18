@@ -3,7 +3,7 @@ import { useAuthContext } from "@/context";
 import { NextSeo } from "next-seo";
 import Preloader from "../components/Preloader";
 import Announcement from "../components/Announcements";
-// import Card from "../components/card
+import Navbar from "../components/navbar";
 import Slider from "../components/slider";
 import { useEffect, useState } from "react";
 import Placement from "../components/Placement";
@@ -50,13 +50,23 @@ export default function Home() {
         <meta name="keywords" content="LDCE" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-
-      {isVisible && <Preloader />}
-      <Slider />
-      <div style={{ transform: "translate(0px,-200px)", marginInline: "auto" }}>
+      {isVisible && <Preloader />}{" "}
+  
+        {" "}
+        <Navbar />
+      
+      <div style={{ position: "unset" }}>
+        <Slider />
+      </div>
+      <div
+        style={{
+          transform: "translate(0px,-200px)",
+          marginInline: "auto",
+          position: "relative",
+        }}
+      >
         <MiniCard />
       </div>
-
       <br />
       <Announcement />
       <br />
@@ -80,7 +90,6 @@ export default function Home() {
           Events
         </chakra.span>
       </div>
-
       <Sliderr />
       <br />
       <Placement />
@@ -90,7 +99,6 @@ export default function Home() {
         alt="horizon"
         style={{ height: "55px", width: "100%" }}
       />
-
       <Footer />
     </>
   );

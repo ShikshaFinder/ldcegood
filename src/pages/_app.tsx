@@ -4,7 +4,6 @@ import {
   ThemeConfig,
 } from "@chakra-ui/react";
 import { Montserrat } from "next/font/google";
-import Navbar from "../components/navbar";
 import { type AppProps } from "next/app";
 import { createPagesBrowserClient } from "@supabase/auth-helpers-nextjs";
 import { SessionContextProvider, Session } from "@supabase/auth-helpers-react";
@@ -65,7 +64,7 @@ export default function App({
               {" "}
               <MiniNav />
             </div>
-            <Navbar />
+           
             <Component {...pageProps} />
           </AuthContextProvider>
         </ChakraProvider>
