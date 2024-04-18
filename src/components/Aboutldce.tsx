@@ -18,7 +18,7 @@ function Aboutldce() {
           bg="linear-gradient(transparent 90%,#FF0000 50%)"
           fontSize="4xl"
         >
-          About Ldce
+          About <span style={{ color: "red" }}>LDCE</span>
         </chakra.span>
       </div>
       <Text
