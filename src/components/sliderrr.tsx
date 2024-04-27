@@ -11,6 +11,8 @@ const YourComponent = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Set autoplay speed in milliseconds (e.g., 3000ms = 3 seconds)
     responsive: [
       {
         breakpoint: 1024,
@@ -38,6 +40,7 @@ const YourComponent = () => {
       },
     ],
   };
+
 
   return (
     <div style={{width:"80%",marginInline:"auto"}} >
